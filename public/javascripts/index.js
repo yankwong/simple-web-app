@@ -9,5 +9,4 @@ $(function() {
     function populateProductsSection($productSection) {
 
     }
-
 });
