@@ -10,7 +10,6 @@ router.get('/', function (request, response) {
 
     connection.query(query, function (error, products) {
         if (error) {
-            console.log('------ get all products error', error);
             response.sendStatus(400);
             connection.end();
         }
@@ -26,14 +25,10 @@ router.post('/add', function (request, response) {
     const query = "INSERT INTO `products` (`name`, `createdDate`) VALUES ('" + productName + "', NOW())";
 
     connection.query(query, (error, result) => {
-        if (error) {
-            console.log('------ get all products error', error);
-            response.sendStatus(400);
-            connection.end();
-        }
-        else {
-            response.sendStatus(200);
-        }
+        const responseStatus = error ? 400 : 200;
+        
+        response.sendStatus(responseStatus);
+        connection.end();
     });
 });
 
