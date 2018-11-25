@@ -16,6 +16,7 @@ function getFormData() {
 
 $(function() {
     // Codes here will fire when DOM is ready
+    $(".product_name").click()
 });
 
 $(window).load(function() {
