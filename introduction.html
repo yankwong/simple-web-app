@@ -1,86 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-    html{
-        background-color: lavender;
-        text-align: center;
-    }   
-    h1 {
-        font-weight: bold;
-        font-family:Arial, Helvetica, sans-serif;
-        text-align: center;
-
-    }
-    p {
-        text-align: center;
-    }
-            
-    .name{
-        width: 100px;
-        height: 20px;
-    }
-    .login {
-        width: 210px;
-        height: 20px;
-    }
-    div{
-        padding: 20px 0 0 0;
-
-        }
-    input{
-        border-radius: 2px;
-        }
-    a{
-        color: green;
-    }
-    .outer-box {
-        width: 50%;
-        margin: 30px auto;
-        border: 1px solid black;
-        background-color: #ddd;
-        padding-bottom: 30px;
-    }
-    button{
-        margin:20px 0 0 0;
-        width: 60%;
-        height: 40px;
-        background-color: green;
-        background-image: linear-gradient(#7DCEA0, green);
-        color:white;
-        font-weight: bold;
-    }
-    .footer {
-        color: white;
-    }
-</style>
-
 <body>
-    <div class="outer-box">
-
-        <h1>Register</h1>
-        <p>Create Your Account, It's Free and take a minute</p>
-        <form>
-            <div class="first-row">
-                <input type="text" class="name" placeholder="First Name">
-                <input type="text" class="name" placeholder="Last Name">    
-            </div>
-            <div class="second-row">
-                    <input type="text" class="login" placeholder="Email">
-            </div>
-            <div class="third-row"> 
-            <input type="password" class="login" placeholder="Password">
-            </div> 
-            <div class="fourth-row">
-            <input type="password" class="login" placeholder="Confirm Password">
-            </div>
-            <div class="fifth-row">
-                <input type="checkbox" class="user-agreement"> I accept the <a href="#"> Term of Use</a> & <a href="#"> Privacy Policy.</a>
-            </div>
-            <button type="button" id="submit-button">Register Now </button>
-        </form>
-    </div>
-    <div class="footer">Already have an accouh? Sign In</div> 
     <!-- This is a comment -->
     <!-- Build a form for user information -->
     <!-- Add a submit button -->
@@ -90,13 +11,4 @@
 
 </body>
 
-<script>
-var submitButton = document.getElementById("submit-button");
-submitButton.addEventListener('click', function() {
-    alert('Hello World');
-});
-// $('#submit-button').click(function() {
-//     alert('Hello World');
-// })
-</script>
 </html>
